@@ -41,8 +41,11 @@ while cap.isOpened():
                     folder_name = os.path.join('hand_shape_data', current_name)
                     os.makedirs(folder_name, exist_ok=True)
                     
+                    # Đếm số tệp trong folder con
+                    files = os.listdir(f'hand_shape_data/{current_name}')
+                    
                     # Lưu lại tọa độ của các điểm mốc tay và ghi vào file trong thư mục con
-                    filename = os.path.join(folder_name, f'{current_name}_hand_shape_{i}.txt')
+                    filename = os.path.join(folder_name, f'{current_name}_hand_shape_{len(files)}.txt')
                     with open(filename, 'w') as file:
                         for landmark in hand_landmarks.landmark:
                             file.write(f"{landmark.x} {landmark.y} {landmark.z}\n")
