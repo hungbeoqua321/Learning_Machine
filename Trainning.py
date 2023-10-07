@@ -1,6 +1,7 @@
 import cv2
 import mediapipe as mp
 import os
+import time
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
@@ -15,7 +16,7 @@ cap = cv2.VideoCapture(0)
 saving = False
 
 # Biến lưu tên của hình
-current_name = ''
+current_name = 'hi'
 
 while cap.isOpened():
     ret, frame = cap.read()
@@ -52,7 +53,7 @@ while cap.isOpened():
                         print(f"Saved: {filename}")
                         
                 saving = False
-                current_name = ''
+                # current_name = ''
 
             # Hiển thị kết quả cử chỉ tay bên cạnh tay
             if current_name:
@@ -63,7 +64,7 @@ while cap.isOpened():
     key = cv2.waitKey(1) & 0xFF
     if key == ord('s'):
         # Nhấn 's' để bắt đầu lưu và yêu cầu nhập tên
-        current_name = input("Enter a name for the hand shape: ")
+        # current_name = input("Enter a name for the next hand shape: ")
         saving = True
 
     # Thoát nếu nhấn 'q'
