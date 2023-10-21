@@ -1,12 +1,14 @@
-import cv2
-import mediapipe as mp
-import os
-import time
+# Import các thư viện cần thiết
+import cv2  # Thư viện OpenCV cho xử lý ảnh và video
+import mediapipe as mp  # Thư viện MediaPipe cho việc nhận dạng điểm mốc trên tay
+import os  # Thư viện hệ thống để làm việc với tệp và thư mục
+import time  # Thư viện thời gian
 
-mp_drawing = mp.solutions.drawing_utils
-mp_hands = mp.solutions.hands
+# Khởi tạo các đối tượng Mediapipe Hands
+mp_drawing = mp.solutions.drawing_utils  # Đối tượng để vẽ các điểm mốc tay
+mp_hands = mp.solutions.hands  # Đối tượng Mediapipe Hands
 
-# Khởi tạo Mediapipe Hands
+# Khởi tạo đối tượng Mediapipe Hands
 hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5)
 
 # Khởi tạo webcam
@@ -23,7 +25,7 @@ while cap.isOpened():
     if not ret:
         break
 
-    # Chuyển đổi thành ảnh màu RGB
+    # Chuyển đổi khung hình thành ảnh màu RGB
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
     # Nhận diện các điểm mốc trên tay
@@ -53,7 +55,6 @@ while cap.isOpened():
                         print(f"Saved: {filename}")
                         
                 saving = False
-                # current_name = ''
 
             # Hiển thị kết quả cử chỉ tay bên cạnh tay
             if current_name:

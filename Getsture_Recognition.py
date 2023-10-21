@@ -3,13 +3,17 @@ import cv2  # Thư viện OpenCV cho xử lý ảnh và video
 import mediapipe as mp  # Thư viện MediaPipe cho việc nhận dạng điểm mốc trên tay
 import os  # Thư viện hệ thống để làm việc với tệp và thư mục
 import numpy as np  # Thư viện NumPy cho xử lý dữ liệu số
-from sklearn.svm import SVC  # Thư viện scikit-learn cho máy học và phân loại
+from sklearn.svm import SVC  # Thư viện scikit-learn cho học máy và phân loại
 from sklearn.model_selection import train_test_split  # Để chia dữ liệu thành tập huấn luyện và tập kiểm tra
 from sklearn.metrics import accuracy_score  # Để đo độ chính xác của mô hình
 
 # Khởi tạo đối tượng Mediapipe Hands
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5)
+# static_image_mode: ché độ ảnh tĩnh
+# max_num_hand: nhận diện tối đa bao nhiêu tay
+# min_detection_confidence: Đây là ngưỡng tối thiểu cho độ tin cậy của việc nhận dạng các điểm mốc trên tay. 
+# Chỉ những điểm mốc có độ tin cậy lớn hơn hoặc bằng ngưỡng này sẽ được xem xét.
 
 # Hàm để đọc dữ liệu từ các tệp và thư mục con
 def load_data_from_folders(data_folder):
