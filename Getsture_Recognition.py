@@ -105,7 +105,7 @@ while cap.isOpened():
 
     cv2.imshow('Hand Gesture Recognition', frame)
 
-    if cv2.waitKey(10) & 0xFF == ord('q'):
+    if cv2.waitKey(1) == ord('x') or cv2.waitKey(1) == 27:
         break
 
 cap.release()
