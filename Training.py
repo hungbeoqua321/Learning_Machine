@@ -1,4 +1,5 @@
 import math
+import joblib
 import os
 import json
 import numpy as np
@@ -36,6 +37,12 @@ def load_data_from_folder(folder_path):
         ratio = Height / Height_pixel
         
 load_data_from_folder(data_folder)
+
+
+
+
+# Lưu model
+# joblib.dump('model.pkl')
         
         
         
