@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "30.0", 
 	"waist_circumference_cm": "93.0_tbr", 
 	"height": "165.0", 
-	"weight": "78.0", 
-	"age": "32", 
-	"gender": "male", 
-	"race": "indian", 
-	"profession": "Farmers"
+	"weight": "78.0"
 }

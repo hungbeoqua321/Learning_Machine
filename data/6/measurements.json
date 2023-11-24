@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "28.0", 
 	"waist_circumference_cm": "69.0", 
 	"height": "155.0", 
-	"weight": "54.0", 
-	"age": "18", 
-	"gender": "female", 
-	"race": "caucasian", 
-	"profession": "Others"
+	"weight": "54.0"
 }

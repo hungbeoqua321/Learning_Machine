@@ -2,6 +2,7 @@ from PIL import Image
 import mediapipe as mp
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
 
 def process_image_with_mediapipe(image_path):
     # Khởi tạo công cụ Mediapipe Pose

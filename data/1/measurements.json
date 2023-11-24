@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "28.0_tbr", 
 	"waist_circumference_cm": "79.0", 
 	"height": "157.0", 
-	"weight": "64.0", 
-	"age": "33", 
-	"gender": "female", 
-	"race": "latino", 
-	"profession": "Executives"
+	"weight": "64.0"
 }

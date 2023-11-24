@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "31.0", 
 	"waist_circumference_cm": "98.0_tbr", 
 	"height": "176.0", 
-	"weight": "83.0", 
-	"age": "23", 
-	"gender": "male", 
-	"race": "caucasian", 
-	"profession": "Others"
+	"weight": "83.0"
 }

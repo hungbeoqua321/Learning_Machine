@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "30.0", 
 	"waist_circumference_cm": "101.0_tbr", 
 	"height": "168.0", 
-	"weight": "76.0", 
-	"age": "39", 
-	"gender": "male", 
-	"race": "indian", 
-	"profession": "Intermediate_prof"
+	"weight": "76.0"
 }

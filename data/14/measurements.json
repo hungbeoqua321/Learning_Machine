@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "30.0", 
 	"waist_circumference_cm": "77.0", 
 	"height": "172.0", 
-	"weight": "58.0", 
-	"age": "36", 
-	"gender": "female", 
-	"race": "black", 
-	"profession": "Employees"
+	"weight": "58.0"
 }

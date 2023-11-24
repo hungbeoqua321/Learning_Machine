@@ -20,9 +20,5 @@
 	"upper_arm_length_cm": "29.0_tbr", 
 	"waist_circumference_cm": "63.0", 
 	"height": "152.0", 
-	"weight": "43.0", 
-	"age": "19", 
-	"gender": "male", 
-	"race": "indian", 
-	"profession": "Others"
+	"weight": "43.0"
 }
