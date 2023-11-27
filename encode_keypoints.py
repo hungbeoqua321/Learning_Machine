@@ -1,4 +1,4 @@
-def get_index_by_position(position):
+def get_index_by_name(name):
     keypoint_mapping = {
         "Nose": 0,
         "Left Eye Inner": 1,
@@ -35,5 +35,5 @@ def get_index_by_position(position):
         "Right Foot Index": 32
     }
 
-    return keypoint_mapping.get(position, -1)
+    return keypoint_mapping.get(name, -1)
  
